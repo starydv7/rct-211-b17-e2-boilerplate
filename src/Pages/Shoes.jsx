@@ -17,17 +17,16 @@ const Shoes = () => {
       <BookPageWrapper>
       <Filter />
       <div>
-        {/* Map through the shoes list here using ShoeCard Component */}
-        {shoes.length > 0 && shoes.map((singleShoe) => {
-          return (
-            <BookListWrapper>
-           <BookCardWrapper key={singleShoe.id}>
-              <ShoeCard shoes={singleShoe}/>
-              </BookCardWrapper>
-              </BookListWrapper>
-             
-           );
-         })}
+          {/* Map through the shoes list here using ShoeCard Component */}
+           {shoes.length > 0 && shoes.map((singleshoe) => {
+              return (
+                <BookCardWrapper key={singleshoe.id}>
+                  <BookListWrapper>
+                    <ShoeCard shoes={singleshoe} />
+                    </BookListWrapper>
+                      </BookCardWrapper>
+          )
+      })}
         </div>
          </BookPageWrapper>
     </div>
