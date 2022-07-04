@@ -14,7 +14,7 @@ const Shoes = () => {
   console.log(shoes);
   return (
     <div>
-      <BookPageWrapper>
+     
       <Filter />
       <div className="grid">
           {/* Map through the shoes list here using ShoeCard Component */}
@@ -28,7 +28,7 @@ const Shoes = () => {
           )
       })}
         </div>
-         </BookPageWrapper>
+         
     </div>
   );
 };

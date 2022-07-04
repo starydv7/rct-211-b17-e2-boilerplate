@@ -1,5 +1,6 @@
 {
   "name": "rct-211-b17-e2",
+   "homepage":".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
