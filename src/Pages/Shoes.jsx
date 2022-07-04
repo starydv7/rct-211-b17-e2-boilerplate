@@ -13,14 +13,16 @@ const Shoes = () => {
   }, []);
   console.log(shoes);
   return (
-    <div>
-     
-      <Filter />
+    <div className="grid3">
+      <BookPageWrapper>
+     <FilterSortWrapper>
+        <Filter />
+        </FilterSortWrapper>
       <div className="grid">
           {/* Map through the shoes list here using ShoeCard Component */}
            {shoes.length > 0 && shoes.map((singleshoe) => {
               return (
-                <BookListWrapper key={singleshoe.id} >
+                <BookListWrapper key={singleshoe.id} className="grid2" >
                 
                     <ShoeCard shoes={singleshoe} />
                     
@@ -28,6 +30,7 @@ const Shoes = () => {
           )
       })}
         </div>
+        </BookPageWrapper>
          
     </div>
   );
