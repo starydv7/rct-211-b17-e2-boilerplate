@@ -1,6 +1,6 @@
 import React from "react";
 
-const SingleShoe = () => {
+const SingleShoe = (shoesData) => {
   return (
     <div>
       <h2>Shoe name</h2>
