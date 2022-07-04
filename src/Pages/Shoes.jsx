@@ -16,15 +16,15 @@ const Shoes = () => {
     <div>
       <BookPageWrapper>
       <Filter />
-      <div>
+      <div className="grid">
           {/* Map through the shoes list here using ShoeCard Component */}
            {shoes.length > 0 && shoes.map((singleshoe) => {
               return (
-                <BookCardWrapper key={singleshoe.id}>
-                  <BookListWrapper>
+                <BookListWrapper key={singleshoe.id} >
+                
                     <ShoeCard shoes={singleshoe} />
-                    </BookListWrapper>
-                      </BookCardWrapper>
+                    
+                 </BookListWrapper>      
           )
       })}
         </div>
@@ -39,6 +39,7 @@ const BookCardWrapper = styled.div`
 border:1px solid blue;
 padding:5px;
 width:370px;
+
 `
 const BookPageWrapper = styled.div`
 display:flex;
